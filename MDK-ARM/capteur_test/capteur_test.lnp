@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"capteur_test\startup_stm32f410rx.o"
+"capteur_test\main.o"
+"capteur_test\stm32f4xx_it.o"
+"capteur_test\stm32f4xx_hal_msp.o"
+"capteur_test\stm32f4xx_hal_tim.o"
+"capteur_test\stm32f4xx_hal_tim_ex.o"
+"capteur_test\stm32f4xx_hal_uart.o"
+"capteur_test\stm32f4xx_hal_rcc.o"
+"capteur_test\stm32f4xx_hal_rcc_ex.o"
+"capteur_test\stm32f4xx_hal_flash.o"
+"capteur_test\stm32f4xx_hal_flash_ex.o"
+"capteur_test\stm32f4xx_hal_flash_ramfunc.o"
+"capteur_test\stm32f4xx_hal_gpio.o"
+"capteur_test\stm32f4xx_hal_dma_ex.o"
+"capteur_test\stm32f4xx_hal_dma.o"
+"capteur_test\stm32f4xx_hal_pwr.o"
+"capteur_test\stm32f4xx_hal_pwr_ex.o"
+"capteur_test\stm32f4xx_hal_cortex.o"
+"capteur_test\stm32f4xx_hal.o"
+"capteur_test\stm32f4xx_hal_exti.o"
+"capteur_test\system_stm32f4xx.o"
+"capteur_test\retarget_io.o"
+--library_type=microlib --strict --scatter "capteur_test\capteur_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "capteur_test.map" -o capteur_test\capteur_test.axf
